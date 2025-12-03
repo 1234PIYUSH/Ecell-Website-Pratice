@@ -1322,8 +1322,7 @@
         }
 
         .footer-logo-section img:hover {
-            transform: scale(1.1) rotate(-5deg);
-            filter: drop-shadow(0 0 15px rgba(255, 211, 69, 0.5));
+            transform: scale(1.4);
         }
 
         .footer-logo-section p {
