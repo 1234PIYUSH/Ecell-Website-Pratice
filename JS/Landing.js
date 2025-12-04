@@ -247,7 +247,7 @@
             { id: 4, image: './images/Speakers/Shridhar-Mankar.png', name: 'Mr. Shridhar Mankar' },
             { id: 5, image: './images/Speakers/Devesh-Chawla.png', name: 'Mr. Devesh Chawla' },
             { id: 6, image: './images/Speakers/Ali-Solanki.png', name: 'Mr. Ali Solanki' },
-            { id: 7, image: './images.Speakers/aditi-madhan.png', name: 'Ms. Aditi Madhan' },
+            { id: 7, image: './images/Speakers/aditi-madhan.png', name: 'Ms. Aditi Madhan' },
             { id: 8, image: './images/Speakers/Ammar-khanna.png', name: 'Dr. Amar Khanna' },
             { id: 9, image: './images/Speakers/Arjun-Deshpande.png', name: 'Mr. Arjun Deshpande' },
             { id: 10, image: './images/Speakers/raj-padiyar.jpg', name: 'Dr. Raj Padhiyar' },
@@ -263,7 +263,7 @@
             card.innerHTML = `
                 <div class="sponsor-image-container">
                     <img src="${sponsor.src}" alt="${sponsor.alt}"
-                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22100%22%3E%3Crect fill=%22%23333%22 width=%22200%22 height=%22100%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23fff%22%3E${sponsor.alt}%3C/text%3E%3C/svg%3E'">
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22100%22%3E%3Crect fill=%22%23333%22 width=%22200%22 height=%22100%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23fff%22%3E${sponsor.alt}%3C/text%3E%3C/svg%3E'">
                 </div>
                 <div class="sponsor-name">
                     <h3>${sponsor.alt}</h3>
