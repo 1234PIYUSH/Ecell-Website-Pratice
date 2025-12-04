@@ -1,0 +1,143 @@
+[33mcommit 01f421f962a767f6cceb474f139354f5ee9e7885[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: chipkarsaish <saish.chipkar25@gmail.com>
+Date:   Thu Dec 4 15:20:05 2025 +0530
+
+    Chnages in event,initiatives, teams heading, boxplot fix
+
+[33mcommit df68d9f4632dd7c18ca505ff5cd11cf94b505fb6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Thu Dec 4 15:16:16 2025 +0530
+
+    corrected the landing page box plot issue for try
+
+[33mcommit bf028ac290480f35aa300da8338463c2327df968[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Thu Dec 4 15:09:50 2025 +0530
+
+    corrected the about us reach section and the landing page box part
+
+[33mcommit 1e8db3e15af63fe243474f11a254a98cc1bc0551[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Thu Dec 4 13:59:23 2025 +0530
+
+    corrected svg of Instagram in all pages
+
+[33mcommit 06028ead69fcb85a4a0e11b1b41d93a7fd731d40[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Thu Dec 4 13:41:16 2025 +0530
+
+    correct svg of Instagram in event
+
+[33mcommit 89c24579919fede0cd162615c5ab35db4868e15d[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 23:16:52 2025 +0530
+
+    Fixed instagram svg image path for about us page footer
+
+[33mcommit f702f6c08c7403049e29c66b679f5431826ac5c0[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 22:44:58 2025 +0530
+
+    Fixed img path for img 6 in gallery page
+
+[33mcommit 66b38f5388b9554b16496635ca95c938198527b6[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 22:40:58 2025 +0530
+
+    Fixed logo scaling in Home page footer
+
+[33mcommit baffc80bb6aca149a5f0c6541b5b5b2f2812c94e[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 22:34:47 2025 +0530
+
+    Fixed logo scaling in Home page
+
+[33mcommit 4bd0834322c91f043e31835660bc16803f7a13ab[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 22:26:26 2025 +0530
+
+    Fixed Para of Backbone and img path of Aditi madan
+
+[33mcommit c9f64a1cd4ae6c82a4b5468d351fa69743233f38[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 21:35:50 2025 +0530
+
+    Fixed Ecell's backbone para
+
+[33mcommit 53bb045e49e49a8652a75becf493c38c3d30d772[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 21:28:24 2025 +0530
+
+    Fix second bg img path in css
+
+[33mcommit 5cda82eabb3e68cf2c4247a69c178e9e5c98677f[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 21:26:19 2025 +0530
+
+    Fix second bg img path in css
+
+[33mcommit 17a3131d161bd5ee2a175a99d046eb85862d07eb[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 21:21:59 2025 +0530
+
+    Fix bg img path in css
+
+[33mcommit 0cde1cc1de8f3a0575e64a27926acf448554e38a[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 21:08:25 2025 +0530
+
+    Fix asset and script paths in Home.html
+
+[33mcommit 312328a9f797d20439f14501be8f78a61a8ee3d5[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 20:05:21 2025 +0530
+
+    added index.html and linked it to Home.html
+
+[33mcommit 379246558f42df9580038fa216ad62cb44a73cbd[m
+Author: Piyush Barde <150721303+1234PIYUSH@users.noreply.github.com>
+Date:   Wed Dec 3 19:01:30 2025 +0530
+
+    Create CNAME
+
+[33mcommit ede2e93b688cf4cc0817ebf44b2ddd4cb6732d3d[m
+Author: Piyush Barde <150721303+1234PIYUSH@users.noreply.github.com>
+Date:   Wed Dec 3 19:01:11 2025 +0530
+
+    Delete CNAME
+
+[33mcommit 2842525f11bc3300759af3b56209ae9174475965[m
+Author: Piyush Barde <150721303+1234PIYUSH@users.noreply.github.com>
+Date:   Wed Dec 3 18:58:26 2025 +0530
+
+    Update CNAME
+
+[33mcommit a3d0e5ac041ed41ac0039e8ce48e4020f81dc4bc[m
+Author: Piyush Barde <150721303+1234PIYUSH@users.noreply.github.com>
+Date:   Wed Dec 3 18:56:06 2025 +0530
+
+    Create CNAME
+
+[33mcommit 7c708173eaa9437bd5bc983f85120dc640b1332f[m
+Author: Piyush Barde <150721303+1234PIYUSH@users.noreply.github.com>
+Date:   Wed Dec 3 18:55:51 2025 +0530
+
+    Delete CNAME
+
+[33mcommit 7fe2dc7a9c1b682aebcdc2153cb32770a6d7bfe8[m
+Author: Piyush Barde <150721303+1234PIYUSH@users.noreply.github.com>
+Date:   Wed Dec 3 18:55:39 2025 +0530
+
+    Create CNAME
+
+[33mcommit 4e5a0b8fd37889464fcac25aad14388df00ef4f5[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 17:38:32 2025 +0530
+
+    Updating README with #
+
+[33mcommit 4238cc46256944999352878199c2f26960d19aff[m
+Author: PIYUSH <piyushbarde01@gmail.com>
+Date:   Wed Dec 3 17:19:23 2025 +0530
+
+    adding all files in repo first time
