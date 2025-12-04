@@ -1517,43 +1517,8 @@
             }
         }
 
-        /* Make sure major sections never exceed viewport width */
-.scroll-container,
-.zoom-section,
-.main-content,
-header,
-.hero,
-.what-is-ecell,
-.initiatives,
-.sponsors,
-.speakers,
-.team,
-.advisors,
-.footer-content {
-    max-width: 100%;
-}
-
-/* Center zoom text properly */
-.zoom-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.zoom-title,
-.zoom-tagline {
-    width: 100%;
-    text-align: center;
-}
-
-/* Mobile-specific overflow fixes */
+/* On mobile, make sure hero background layers don't extend past the screen */
 @media (max-width: 768px) {
-    /* Prevent background layers from causing extra width */
     .hero-background,
     .hero-overlay {
         left: 0;
@@ -1564,11 +1529,5 @@ header,
     .hero {
         padding-left: 20px;
         padding-right: 20px;
-    }
-
-    .scroll-container,
-    .zoom-section {
-        width: 100%;
-        overflow-x: hidden;
     }
 }
