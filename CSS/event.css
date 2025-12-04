@@ -1,8 +1,11 @@
-body{
+/* top of your CSS */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { overflow-x: hidden; } /* optional safety-net */
+body {
     background-color: black;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+ 
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,8 +67,7 @@ nav a {
     font-size: 17px;  
     font-weight: 500; 
     position: relative;
-    padding: 15px 0 6px 0; /* Reset padding to match master style */
-    display: inline; /* Reset block display from old CSS */
+    padding-bottom: 6px; 
     transition: color 0.4s ease, text-shadow 0.4s ease;
 }
 
@@ -83,7 +85,6 @@ nav a::after {
         0 0 8px rgba(249, 200, 2, 0.8), 
         0 0 16px rgba(249, 200, 2, 0.6);
     transition: width 0.4s ease-in-out; 
-    border-radius: 0;
 }
 
 /* Hover & Active State */
@@ -141,7 +142,7 @@ nav a.active::after {
 /* RESPONSIVE HEADER */
 @media (max-width: 1024px) {
     nav {
-        display: none; 
+        display: none;
     }
 
     .hamburger {
@@ -174,50 +175,65 @@ nav a.active::after {
 /* --- REFACTORED Button Styles (Kept from your file) --- */
 .register-btn,
 .upcoming-heading {
-  background-color: #FF0000;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 8px 15px; 
-  border-radius: 5px; 
-  transition: opacity 0.3s ease;
-  font-size: 1em;
-  text-shadow: none; 
-  display: inline-block; 
+    background-color: #FF0000;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    font-size: 1em;
+    text-shadow: none;
+    display: inline-block;
 }
 
 .register-btn:hover,
 .upcoming-heading:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .register-btn {
-  clear: both;
-  float: right;
-  margin: 20px 50px 0 0;
+    clear: both;
+    float: right;
+    margin: 20px 50px 0 0;
 }
 
 .upcoming-heading {
-  clear: both;
-  float: left;
-  margin: 40px 0 20px 50px;
+    clear: both;
+    float: left;
+    margin: 40px 0 20px 50px;
 }
 
-/* --- MAIN HEADING (Kept from your file) --- */
-.main-heading {
-  color: gold;
-  font-family: 'Montserrat', sans-serif;
-  margin: 40px 0 0 0; 
-  position: relative;
-  clear: both; 
-  display: block;      
-  text-align: center;  
-  padding-bottom: 15px; 
-  text-shadow: 0 0 8px gold, 0 0 12px rgba(255, 215, 0, 0.3);
+/* --- MAIN HEADI
+NG (Kept from your file) --- */
+.page-title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #FFD700, #FFA500, #DAA520);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: relative;
+    animation: titleGlow 2s ease-in-out infinite alternate;
 }
 
-.main-heading::after {
+@keyframes titleGlow {
+    from {
+        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.3));
+    }
+
+    to {
+        filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.6));
+    }
+}
+
+.page-title::after {
     content: '';
     position: absolute;
     bottom: -15px;
@@ -232,31 +248,31 @@ nav a.active::after {
 /* --- GALLERY STYLES (Kept from your file) --- */
 .gallery-wrapper {
     width: 100%;
-    max-width: 420px; 
+    max-width: 420px;
     margin: 25px auto 40px auto;
     position: relative;
 }
 
 .main-image-display {
-    position: relative; 
+    position: relative;
     border-radius: 10px;
-    margin-bottom: 15px; 
-    overflow: visible; 
-    aspect-ratio: 3 / 4; 
+    margin-bottom: 15px;
+    overflow: visible;
+    aspect-ratio: 3 / 4;
 }
 
 .gallery-image {
     width: 100%;
-    height: 100%; 
-    object-fit: cover; 
-    display: block; 
-    border-radius: 10px; 
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
     position: absolute;
     top: 0;
     left: 0;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), 
-                opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-                z-index 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+        z-index 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(0.5);
     opacity: 0;
     z-index: 1;
@@ -270,69 +286,75 @@ nav a.active::after {
 
 .gallery-image.is-prev {
     transform: translateX(-60%) scale(0.7);
-    opacity: 0.5; 
+    opacity: 0.5;
     z-index: 5;
 }
 
 .gallery-image.is-next {
     transform: translateX(60%) scale(0.7);
-    opacity: 0.5; 
+    opacity: 0.5;
     z-index: 5;
 }
 
 /* Arrow Styles */
 .nav-arrow {
     position: absolute;
-    top: 35%; 
+    top: 35%;
     transform: translateY(-50%);
     cursor: pointer;
-    color: gold; 
-    background-color: transparent; 
-    font-size: 40px; 
+    color: gold;
+    background-color: transparent;
+    font-size: 40px;
     font-weight: bold;
     padding: 10px 8px;
-    user-select: none; 
-    transition: color 0.3s ease; 
+    user-select: none;
+    transition: color 0.3s ease;
     border-radius: 3px;
-    z-index: 10; 
+    z-index: 10;
 }
 
 .nav-arrow:hover {
-    background-color: transparent; 
-    color: white; 
+    background-color: transparent;
+    color: white;
 }
 
-.prev-arrow { left: -85px; }
-.next-arrow { right: -85px; }
+.prev-arrow {
+    left: -85px;
+}
+
+.next-arrow {
+    right: -85px;
+}
 
 /* Thumbnail Navigation */
 .thumbnail-nav {
     display: flex;
     justify-content: center;
-    gap: 10px; 
-    padding: 10px 10px; 
+    gap: 10px;
+    padding: 10px 10px;
 }
 
 .thumbnail {
-    width: 80px; 
-    height: 120px; 
-    object-fit: cover; 
-    border: 3px solid #555; 
+    width: 80px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #555;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
     opacity: 0.7;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .thumbnail:hover {
     border-color: #999;
     opacity: 1;
 }
+
 .thumbnail.active {
-    border-color: gold; 
+    border-color: gold;
     opacity: 1;
-    transform: scale(1.15); 
+    transform: scale(1.15);
 }
 
 /* --- FOOTER STYLES --- */
@@ -342,7 +364,8 @@ nav a.active::after {
     padding: 60px 50px;
     border-radius: 16px 16px 0 0;
     font-family: 'Open Sans', sans-serif;
-    clear: both; /* Ensure footer sits below everything */
+    clear: both;
+    /* Ensure footer sits below everything */
 }
 
 .footer-grid {
@@ -374,7 +397,7 @@ nav a.active::after {
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
 }
 
 .footer-column {
@@ -403,7 +426,7 @@ nav a.active::after {
 }
 
 .footer-column a:hover {
-    color: #f9c802; 
+    color: #f9c802;
 }
 
 .social-links {
@@ -441,10 +464,11 @@ nav a.active::after {
 
 .social-item img[alt="Twitter"] {
     /* Remove the harsh filter that works poorly on non-SVG/non-monochromatic PNGs */
-    filter: none; 
-    
+    filter: none;
+
     /* Ensure the hover effect doesn't break it either */
-    transition: transform 0.2s ease; /* Keep the transform */
+    transition: transform 0.2s ease;
+    /* Keep the transform */
 }
 
 .social-item img[alt="Twitter"]:hover {
@@ -472,8 +496,8 @@ nav a.active::after {
     color: #bbb;
 }
 
-.gold{
-  border-color: gold
+.gold {
+    border-color: gold
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
@@ -493,7 +517,7 @@ nav a.active::after {
 
     .footer-links-section {
         justify-content: center;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         gap: 40px;
     }
 
@@ -504,30 +528,39 @@ nav a.active::after {
 
 @media (max-width: 768px) {
     .gallery-wrapper {
-        max-width: 95%; 
+        max-width: 95%;
     }
+
     .thumbnail {
         width: 60px;
         height: 90px;
     }
+
     .nav-arrow {
-        font-size: 30px; 
+        font-size: 30px;
     }
-    .prev-arrow { left: -30px; }
-    .next-arrow { right: -30px; }
+
+    .prev-arrow {
+        left: -30px;
+    }
+
+    .next-arrow {
+        right: -30px;
+    }
 
     .register-btn,
     .upcoming-heading {
-        float: none; 
+        float: none;
         display: block;
         width: 80%;
         margin: 20px auto;
         text-align: center;
     }
-    
+
     .footer-content {
         padding: 40px 20px;
     }
+
     .footer-links-section {
         flex-direction: column;
         align-items: center;
@@ -535,20 +568,41 @@ nav a.active::after {
     }
 }
 
-@media (max-width: 550px) { 
+@media (max-width: 550px) {
     .gallery-wrapper {
-        max-width: 280px; 
+        max-width: 280px;
     }
-    .prev-arrow { left: -10px; }
-    .next-arrow { right: -10px; }
-    .nav-arrow { font-size: 24px; }
+
+    .prev-arrow {
+        left: -10px;
+    }
+
+    .next-arrow {
+        right: -10px;
+    }
+
+    .nav-arrow {
+        font-size: 24px;
+    }
+
     .upcoming-heading {
-        text-align: center; 
+        text-align: center;
         margin-left: 0;
     }
-    
-    .footer-logo-section img { width: 100px; }
-    .footer-content { padding: 35px 15px; }
-    .footer-links-section { gap: 25px; }
-    .footer-column a { font-size: 14px; }
+
+    .footer-logo-section img {
+        width: 100px;
+    }
+
+    .footer-content {
+        padding: 35px 15px;
+    }
+
+    .footer-links-section {
+        gap: 25px;
+    }
+
+    .footer-column a {
+        font-size: 14px;
+    }
 }
