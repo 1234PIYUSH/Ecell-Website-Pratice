@@ -695,7 +695,7 @@ nav a.active::after {
     text-align: center;
 }
 
-.what-is-ecell h2 {
+.what-is-ecell h1 {
     font-family: 'Oswald';
     font-size: 60px;
     font-weight: bold;
@@ -704,7 +704,7 @@ nav a.active::after {
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-.what-is-ecell h2:hover {
+.what-is-ecell h1:hover {
     transform: scale(1.02);
     text-shadow: 0px 4px 20px rgba(238, 7, 7, 0.5);
 }
