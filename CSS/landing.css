@@ -1519,3 +1519,21 @@ nav a.active::after {
         width: 100%;
     }
 }
+
+/* === MOBILE OVERRIDES FOR LANDING TITLE & TAGLINE === */
+@media (max-width: 600px) {
+    /* Make the big E-CELL DMCE larger on phones */
+    .zoom-title {
+        font-size: 82px;          /* was clamped to ~60px; this forces it bigger */
+    }
+
+    /* Make tagline bigger but still safe */
+    .zoom-tagline {
+        font-size: 18px;          /* bigger text */
+        letter-spacing: 0.18em;   /* not too wide */
+        max-width: 96vw;          /* can use almost full width */
+        line-height: 1.3;
+        text-align: center;
+        /* NO white-space: nowrap; so it can wrap if needed */
+    }
+}
