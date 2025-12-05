@@ -259,23 +259,6 @@ body {
     line-height: 1.4;
 }
 
-/* small phones – still readable but safe */
-@media (max-width: 480px) {
-    .zoom-tagline {
-        font-size: 15px;
-        letter-spacing: 0.16em;
-        max-width: 94vw;
-    }
-}
-
-/* extra safety: keep the scroll section exactly viewport width */
-@media (max-width: 600px) {
-    .zoom-section,
-    .scroll-container {
-        width: 100%;
-    }
-}
-
 /* Continue scroll hint after video */
 .continue-indicator {
     position: absolute;
@@ -695,7 +678,7 @@ nav a.active::after {
     text-align: center;
 }
 
-.what-is-ecell h1 {
+.what-is-ecell h2 {
     font-family: 'Oswald';
     font-size: 60px;
     font-weight: bold;
@@ -704,7 +687,7 @@ nav a.active::after {
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
-.what-is-ecell h1:hover {
+.what-is-ecell h2:hover {
     transform: scale(1.02);
     text-shadow: 0px 4px 20px rgba(238, 7, 7, 0.5);
 }
