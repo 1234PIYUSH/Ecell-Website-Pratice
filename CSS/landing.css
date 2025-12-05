@@ -247,16 +247,14 @@ body {
     top: calc(50% + 80px);
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Oxygen', sans-serif;
-    font-size: clamp(16px, 4vw, 26px);   /* bigger overall */
-    font-weight: 700;
-    letter-spacing: 0.18em;              /* a bit tighter than before */
+    font-family: 'Oxygen';
+    font-size: clamp(18px, 3vw, 32px);
+    font-weight: bold;
+    letter-spacing: 5px;
     color: var(--text-light);
     opacity: 1;
     transition: opacity 0.3s ease;
-    max-width: 92vw;                     /* stays inside viewport */
-    text-align: center;
-    line-height: 1.4;
+    white-space: nowrap;
 }
 
 /* Continue scroll hint after video */
