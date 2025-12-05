@@ -379,7 +379,7 @@ body {
 }
 
 /* MAIN HEADING */
-.hero h2 {
+.hero .h2 {
     font-family: 'Oswald', sans-serif;
     font-size: clamp(42px, 12vw, 85px);  /* bigger on all screens */
     font-weight: 700;
@@ -391,7 +391,7 @@ body {
 }
 
 /* TAGLINE */
-.hero p {
+.hero .p {
     font-family: 'Oxygen', sans-serif;
     font-size: clamp(18px, 5.2vw, 30px); /* increased size */
     font-weight: 700;
