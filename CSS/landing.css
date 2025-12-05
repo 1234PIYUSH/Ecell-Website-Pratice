@@ -247,14 +247,33 @@ body {
     top: calc(50% + 80px);
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Oxygen';
-    font-size: clamp(18px, 3vw, 32px);
-    font-weight: bold;
-    letter-spacing: 5px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: clamp(16px, 4vw, 26px);   /* bigger overall */
+    font-weight: 700;
+    letter-spacing: 0.18em;              /* a bit tighter than before */
     color: var(--text-light);
     opacity: 1;
     transition: opacity 0.3s ease;
-    white-space: nowrap;
+    max-width: 92vw;                     /* stays inside viewport */
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* small phones – still readable but safe */
+@media (max-width: 480px) {
+    .zoom-tagline {
+        font-size: 15px;
+        letter-spacing: 0.16em;
+        max-width: 94vw;
+    }
+}
+
+/* extra safety: keep the scroll section exactly viewport width */
+@media (max-width: 600px) {
+    .zoom-section,
+    .scroll-container {
+        width: 100%;
+    }
 }
 
 /* Continue scroll hint after video */
