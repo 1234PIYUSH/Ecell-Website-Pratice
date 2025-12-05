@@ -379,7 +379,7 @@ body {
 }
 
 /* MAIN HEADING */
-.hero h2 {
+.hero h1 {
     font-family: 'Oswald', sans-serif;
     font-size: clamp(42px, 12vw, 85px);  /* bigger on all screens */
     font-weight: 700;
